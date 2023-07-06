@@ -38,7 +38,6 @@ const ResponsiveDialog = (props) => {
       })
       .then(()=>{
         setExcelData(null)
-        setShowAlertConfirm(false)
         if(i===data.length-1){
           window.alert("Tarifado insertado con exito")
         }})
