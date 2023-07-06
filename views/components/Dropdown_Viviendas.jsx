@@ -9,7 +9,7 @@ const Dropdown_Viviendas = (props) => {
     const { user } = useContext(Authcontext)
     const [viv, setViv] = useState(null)
     const [dataviv, setDataViv] = useState(null);
-    const url = "http://192.168.49.1:180/empresa/obra/vivienda-t"
+    const url = "http://192.168.1.74:180/empresa/obra/vivienda-t"
     
     useEffect(() => {
         axios.post(url, { id_empresa: selectedEmpresa, Usu_Cuenta: user, id_obra:selectedObra})

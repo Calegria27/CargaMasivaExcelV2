@@ -8,7 +8,7 @@ const Dropdown_Obras = (props) => {
     const { selectedEmpresa, obrafun } = props;
     const { user } = useContext(Authcontext)
     const [obra, setObra] = useState('')
-    const url = "http://192.168.49.1:180/empresa/obra"
+    const url = "http://192.168.1.74:180/empresa/obra"
     const [dataobras, setDataObras] = useState(null);
 
     useEffect(() => {

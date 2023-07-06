@@ -6,7 +6,7 @@ import { InputLabel, MenuItem, FormControl, Select } from "@mui/material"
 const Dropdown_Tarifado = (props) => {
     const { selectedEmpresa, selectedObra, selectedViv, tarifadofun } = props;
     const [tarifado, setTarifado] = useState(null);
-    const url = "http://192.168.49.1:180/empresa/obra/vivienda-t/paquete"
+    const url = "http://192.168.1.74:180/empresa/obra/vivienda-t/paquete"
     const [datatarifado, setDataTarifado] = useState(null);
     const [name, setName] = useState(null);
 
