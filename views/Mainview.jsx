@@ -16,18 +16,24 @@ export default function Mainview() {
 
     const handleEmpresaSelection = (empresa) => {
         setSelectedEmpresa(empresa);
+        setSelectedObra(null);
+        setSelectedViv(null);
+        setSelectedTarifado(null);
     }
 
     const handleObraSelection = (obra) => {
         setSelectedObra(obra);
+        setSelectedViv(null);
+        setSelectedTarifado(null);
     }
 
-    const handleVivSelection = (obra) => {
-        setSelectedViv(obra);
+    const handleVivSelection = (viv) => {
+        setSelectedViv(viv);
+        setSelectedTarifado(null);
     }
 
-    const handleTarifadoSelection = (obra) => {
-        setSelectedTarifado(obra);
+    const handleTarifadoSelection = (tarifado) => {
+        setSelectedTarifado(tarifado);
     }
 
 
