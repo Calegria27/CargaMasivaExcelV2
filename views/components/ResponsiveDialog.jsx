@@ -15,7 +15,7 @@ const ResponsiveDialog = (props) => {
   const theme = useTheme();
   const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
   const {user} = React.useContext(Authcontext);
-  const url = "http://192.168.1.74:180/upload_data"
+  const url = "http://192.168.1.16:180/upload_data"
 
   const handleClickOpen = () => {
     insertdata();

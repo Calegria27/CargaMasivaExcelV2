@@ -6,7 +6,7 @@ import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 const Dropdown_Empresa = (props) => {
     const { onEmpresaSelected } = props;
     const { user } = useContext(Authcontext);
-    const url = "http://192.168.1.74:180/empresa";
+    const url = "http://192.168.1.16:180/empresa";
     const [dataempresas, setDataempresas] = useState(null);
     const [empresa, setEmpresa] = useState("");
 
